@@ -33,6 +33,6 @@ if (strlen($listElem[1]) !== 0) {
 	echo"<td nowrap>$diff s</td>";
 	echo "</tr>";
 } else {
-	echo"<tr><td colspan=\"5\"></tr>";
+	echo"<tr><td colspan=\"5\">|</tr>";
 }
 ?>
