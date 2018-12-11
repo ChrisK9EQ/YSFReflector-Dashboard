@@ -5,7 +5,7 @@
   <div class="panel-heading">Last Heard List</div>
   <!-- Tabelle -->
   <div class="table-responsive">  
-  <table id="lh" class="table table-condensed">
+  <table id="lh" class="table table-condensed compact">
   <thead>
     <tr>
       <th>Time (<?php echo TIMEZONE;?>)</th>
