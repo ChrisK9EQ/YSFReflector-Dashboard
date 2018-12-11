@@ -33,16 +33,16 @@ include "version.php";
   	<style>
  	    h4 {
  		display: inline
- 		}	
+ 		}
             body{
-                padding: 10px;
+                padding: 5px;
                 }
  	</style>
     <title><?php echo getConfigItem("Info", "Name", $configs); ?> - YSFReflector-Dashboard by DG9VH</title>
   </head>
   <body>
   <div class="page-header" style="position:relative;">
-  <h1><small>YSFReflector-Dashboard by DG9VH for Reflector:</small>  <?php echo getConfigItem("Info", "Name", $configs); ?> / <?php echo getConfigItem("Info", "Description", $configs); ?></h1>
+  <h3><small>YSFReflector-Dashboard for:</small>  <?php echo getConfigItem("Info", "Name", $configs); ?> / <?php echo getConfigItem("Info", "Description", $configs); ?></h3>
   <h4>YSFReflector by G4KLX Version: 
   <?php  echo getYSFReflectorVersion(); ?></h4>
   <?php
