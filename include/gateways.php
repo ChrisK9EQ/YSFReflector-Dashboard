@@ -5,7 +5,7 @@
   <div class="panel-heading">Connected YSFGateways</div>
   <!-- Tabelle -->
   <div class="table-responsive"> 
-  <table id="gateways" class="table table-condensed">
+  <table id="gateways" class="table table-condensed compact">
   	<thead>
     <tr>
       <th>Reporting Time (<?php echo TIMEZONE;?>)</th>
