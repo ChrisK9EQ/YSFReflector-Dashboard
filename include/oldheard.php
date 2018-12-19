@@ -5,7 +5,7 @@
   <div class="panel-heading">Alltime Heard List</div>
   <!-- Tabelle -->
   <div class="table-responsive">  
-  <table id="oldallHeard" class="table table-condensed">
+  <table id="oldallHeard" class="table table-condensed compact">
   <thead>
     <tr>
       <th>Time (<?php echo TIMEZONE;?>)</th>
