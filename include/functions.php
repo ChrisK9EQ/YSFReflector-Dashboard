@@ -187,7 +187,8 @@ function getHeardList($logLines) {
 		$timestamp = substr($logLine, 3, 19);
 		$dttimestamp = new DateTime($timestamp);
 		if ($dttxend !== "") {
-			$duration = $dttxend->getTimestamp() - $dttimestamp->getTimestamp();
+			$duration = $dttimestamp->diff($dttxend)->format("%s");
+			$duration = $dttxend->getTimestamp() - $dttimestamp->getTimestamp(); // Correction to display seconds rather than seconds % 60
 		}
 		$callsign2 = substr($logLine, strpos($logLine,"from") + 5, strpos($logLine,"to") - strpos($logLine,"from") - 6);
 		$callsign = trim($callsign2);
