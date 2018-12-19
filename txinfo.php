@@ -10,6 +10,13 @@ $reverseLogLines = $logLines;
 array_multisort($reverseLogLines,SORT_DESC);
 $lastHeard = getLastHeard($reverseLogLines, True);
 $listElem = $lastHeard[0];
+#
+#listElem
+# 0 Time of keyup
+# 1 Call
+# 2 Target
+# 3 Gateway
+#
 if (strlen($listElem[1]) !== 0) {
 	echo "<tr>";
 	echo"<td nowrap>$listElem[0]</td>";
@@ -33,6 +40,6 @@ if (strlen($listElem[1]) !== 0) {
 	echo"<td nowrap>$diff s</td>";
 	echo "</tr>";
 } else {
-	echo"<tr><td colspan=\"5\">|</tr>";
-}
+	echo"<tr><td colspan=\"5\">|</tr>";} // Add character so row height stays the same
+	#echo "<tr><td>'TEST'</td></tr>"; 
 ?>
