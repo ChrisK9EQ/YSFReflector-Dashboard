@@ -17,14 +17,14 @@
 	//$gateways = getConnectedGateways($logLines);
 	$gateways = getLinkedGateways($logLines);
 	foreach ($gateways as $gateway) {
-		
+		$gateCall = $gateway['callsign'];
 		echo "<tr>";
 		echo "<td>".convertTimezone($gateway['timestamp'])."</td>";
-		
-		if (defined("GDPR"))
-			echo"<td nowrap>".str_replace("0","&Oslash;",substr($gateway['callsign'],0,3)."***")."</td>";
-		else
-			echo"<td nowrap>".str_replace("0","&Oslash;",$gateway['callsign'])."</td>";
+		echo "<td nowrap><a target=\"_blank\" href=\"https://qrz.com/db/$gateCall\">$gateCall</a></td>";
+#		if (defined("GDPR"))
+#			echo"<td nowrap>".str_replace("0","&Oslash;",substr($gateway['callsign'],0,3)."***")."</td>";
+#		else
+#			echo"<td nowrap>".str_replace("0","&Oslash;",$gateway['callsign'])."</td>";
 		echo "</tr>";
 	}
 ?>
