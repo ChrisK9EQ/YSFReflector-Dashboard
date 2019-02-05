@@ -5,7 +5,7 @@
   <div class="panel-heading">Last Heard List</div>
   <!-- Tabelle -->
   <div class="table-responsive">  
-  <table id="lh" class="table table-condensed compact">
+  <table id="lh" class="table table-condensed compact" style="width:800px" align="left">
   <thead>
     <tr>
       <th>Time (<?php echo TIMEZONE;?>)</th>
@@ -45,7 +45,8 @@ for ($i = 0; $i < count($lastHeard); $i++) {
   <script>
     $(document).ready(function(){
       $('#lh').dataTable( {
-        "aaSorting": [[0,'desc']]
+        "aaSorting": [[0,'desc']],
+        pageLength: 15
       } );
     });
    </script>
