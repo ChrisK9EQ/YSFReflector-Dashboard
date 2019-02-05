@@ -3,7 +3,7 @@
   <div class="panel-heading">Currently TXing</div>
   <!-- Tabelle -->
   <div class="table-responsive">  
-  <table id="currtx" class="table table-condensed table-striped table-hover compact">
+  <table id="currtx" class="table table-condensed table-striped table-hover compact" align="left" style="width: 800px">
    <thead>
     <tr>
       <th>Time (<?php echo TIMEZONE;?>)</th>
