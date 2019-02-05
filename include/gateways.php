@@ -5,7 +5,7 @@
   <div class="panel-heading">Connected YSFGateways</div>
   <!-- Tabelle -->
   <div class="table-responsive"> 
-  <table id="gateways" class="table table-condensed compact">
+  <table id="gateways" class="table table-condensed compact" align="left" style="width: 400px">
   	<thead>
     <tr>
       <th>Reporting Time (<?php echo TIMEZONE;?>)</th>
@@ -34,7 +34,8 @@
   <script>
     $(document).ready(function(){
       $('#gateways').dataTable( {
-        "aaSorting": [[1,'asc']]
+        "aaSorting": [[1,'asc']],
+	"pageLength": 25
       } );
     });
    </script>
