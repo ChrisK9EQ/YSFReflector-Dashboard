@@ -5,7 +5,7 @@
   <div class="panel-heading">Todays Heard List</div>
   <!-- Tabelle -->
   <div class="table-responsive">  
-  <table id="allHeard" class="table table-condensed compact">
+  <table id="allHeard" class="table table-condensed compact" align="left" style="width: 800px">
   <thead>
     <tr>
       <th>Time (<?php echo TIMEZONE;?>)</th>
@@ -43,7 +43,8 @@ for ($i = 0; $i < count($allHeard); $i++) {
   <script>
     $(document).ready(function(){
       $('#allHeard').dataTable( {
-        "aaSorting": [[0,'desc']]
+        "aaSorting": [[0,'desc']],
+	"pageLength": 25
       } );
     });
    </script>
