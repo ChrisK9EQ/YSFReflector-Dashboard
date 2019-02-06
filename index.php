@@ -37,6 +37,16 @@ include "version.php";
             body{
                 padding: 5px;
                 }
+           table, th, td {
+//                border-collapse: collapse;
+                border: 1px solid black;
+                padding: 0px;
+             }
+           th, td {
+//                height: auto;
+                padding: 0px;
+//                border: 1px solid black;
+              }
  	</style>
     <title><?php echo getConfigItem("Info", "Name", $configs); ?> - YSFReflector-Dashboard by DG9VH</title>
   </head>
@@ -57,15 +67,13 @@ include "version.php";
 checkSetup();
 // Here you can feel free to disable info-sections by commenting out with // before include
 include "include/txinfo.php";
-#include "include/sysinfo.php";
-#include "include/disk.php";
-#include "include/gateways.php";
 include "include/lh.php";
 include "include/gateways.php";
 include "include/sysinfo.php";
-#include "include/allheard.php";
+include "include/allheard.php";
 if (defined("SHOWOLDMHEARD")) {
   include "include/oldheard.php";
+include "include/disk.php";
 }
 ?>
 	<div class="panel panel-info">
