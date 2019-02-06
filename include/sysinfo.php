@@ -101,7 +101,7 @@
   <div class="panel-heading">System Info</div>
   <!-- Tabelle -->
 	<div class="table-responsive">  
-		<table id="sysinfo" class="table table-condensed">
+		<table id="sysinfo" class="table table-condensed" align="left" style="width: 800px">
 			<tbody>
 				<tr>
 					<?php
