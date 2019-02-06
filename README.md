@@ -1,36 +1,17 @@
 # YSFReflector-Dashboard
-Dashboard for YSFReflector (by G4KLX)
-=====================================
+Dashboard for YSFReflector
+==========================
 
 About
 =====
-YSFReflector-Dashboard is a web-dashboard for visualization of different data like
-system temperatur, cpu-load ... and it shows a last-heard-list.
+YSFReflector-Dashboard is a web-dashboard for visualization for YSFReflector
 
-It relies on YSFReflector by G4KLX (see https://github.com/g4klx/YSFClients). At 
-this place a big thank you to Jonathan for his great work he did with this 
-software.
+It is based on YSFReflector by G4KLX (see https://github.com/g4klx/YSFClients).
 
-Required are
+This version
 ============
-* Webserver like 
-* lighttpd or apache(2)
-* PHP 5 >= 5.5.0
-
-Installation
-============
-* Please ensure to not put loglevels at 0 in YSFReflector.ini.
-* Copy all files into your webroot and enjoy working with it.
-* Create a config/config.php by calling setup.php and giving suitable values
-* If Dashboard is working, remove setup.php from your webroot
-
-For detailled installation see `linux-step-by-step.md` within this repository.
-
-Note
-============
-* You might need to implement a logrotate mechanism for the YSFReflector log files to prevent it to fill your filesystem. This directory is normally configured with 'FilePath=' in /etc/YSFReflector.ini
-
-
-Contact
-=======
-Feel free to contact the author via email: dg9vh@darc.de
+This fork contains modifications by K9EQ:
+1. Fixed issue with incorrect Tx keyup time
+2. Reduced the size of the tables
+3. Reduced the width of the tables for better readability
+4. Tweaks to configuration data for my use.
